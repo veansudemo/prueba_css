@@ -1,0 +1,140 @@
+.navbar {
+  grid-column: 1 / -1;
+  padding-top: 50px;
+}
+
+.navbar__logo {
+  width: 15%;
+  padding-left: 10%;
+}
+
+.navbar__logo-fuente {
+  padding-top: 25%;
+  padding-left: 30%;
+  padding-bottom: 25%;
+  margin: 0;
+}
+
+.menu-content {
+  font-family: $raleway;
+  padding: 0 0 0 50px;
+
+  & .menu__content-section-link {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 0;
+  }
+
+  & .menu__content-section-button {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 0;
+  }
+}
+
+.collapsible-menu {
+  padding: 0 30px;
+  margin-left: 180px;
+}
+
+.collapsible-menu ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.collapsible-menu a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: $raising-black;
+}
+
+.collapsible-menu label {
+  display: block;
+  cursor: pointer;
+  background: url("../images/menu.png") no-repeat left center;
+  padding: 20px 0 20px 50px;
+  margin-left: 80%;
+  margin-top: -45px;
+}
+
+input#menu {
+  display: none;
+}
+
+.menu-content {
+  max-height: 0;
+  overflow: hidden;
+  font-family: 'Oswald', sans-serif;
+  padding: 0 0 0 10px;
+}
+
+input:checked ~ label {
+  background-image: url("../images/menu.png");
+}
+
+input:checked ~ .menu-content {
+  max-height: 100%;
+}
+@media (min-width: 768px) {
+  .navbar__logo {
+    width: 10%;
+    padding-left: 10%;
+    float: left;
+  }
+
+  .collapsible-menu {
+    margin: 0;
+
+    & label {
+      display: none;
+    }
+  }
+
+  .menu-content {
+    width: auto;
+    max-height: 100%;
+    margin-left: 0;
+    padding-left: 0;
+
+    & a {
+      font-weight: $regular;
+      font-family: $open-sans;
+      color: $raising-black;
+    }
+  }
+
+  .collapsible-menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    & .menu__content-section-link {
+      display: flex;
+      flex-direction: row;
+
+      & li {
+        float: left;
+      }
+    }
+
+    & .menu__content-section-button {
+      display: flex;
+      flex-direction: row;
+
+      & li {
+        float: left;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .collapsible-menu {
+    padding-right: 60px;
+  }
+}

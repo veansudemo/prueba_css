@@ -1,0 +1,27 @@
+.nav__button {
+  background-color: $ball-blue;
+  @include btn-small;
+}
+
+.nav__button:hover {
+  background-color: $middle-blue;
+  @include btn-small;
+}
+.nav__button:focus {
+  background-color: $gray;
+  @include btn-small;
+}
+
+.main__precios-card__button {
+  background-color: $ball-blue;
+  margin-top: 20px;
+  @include btn-big;
+}
+.main__precios-card__button:hover {
+  background-color: $middle-blue;
+  @include btn-big;
+}
+.main__precios-card__button:focus {
+  background-color: $gray;
+  @include btn-big;
+}

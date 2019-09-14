@@ -1,0 +1,38 @@
+header {
+  grid-row: 2 / 3;
+  grid-column: 1 / -1;
+}
+
+
+hgroup {
+  padding: 10% 20%;
+   text-align: left;
+  & h1 {
+    font-size: $xxxxx-large;
+    font-family: $raleway;
+    font-weight: $bold;
+    letter-spacing:2px;
+  }
+ & p {
+    font-size: $large;
+    font-family: $open-sans;
+    font-weight: $regular;
+    padding-bottom: 600px;
+    line-height: 2.5;
+ }
+}
+
+.header__background {
+  background-image: url("../images/bg-hero.svg");
+  background-size: cover;
+  background-position:70% 100% ;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 1200px) {
+  hgroup {
+    width: 35%;
+    padding: 20%;
+    padding-left: 10%
+  }
+}

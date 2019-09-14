@@ -1,0 +1,35 @@
+footer {
+  grid-row: 4 / 5;
+  grid-column: 1 / -1;
+  background-color: $raising-black;
+}
+
+
+.footer__nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  & ul {
+    list-style: none;
+    display: flex;
+  }
+
+  & li {
+    float: left;
+    padding: 0px 10px ;
+  }
+
+  & a {
+    font-size: $large;
+    font-family: $open-sans;
+    color: $spanish-gray;
+    text-decoration: none;
+  }
+}
+.footer_brand {
+  display: flex;
+  justify-content: center;
+  font-size: $large;
+  font-family: $open-sans;
+  color: $spanish-gray;
+}

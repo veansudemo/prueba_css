@@ -1,0 +1,62 @@
+.main__precios {
+  background-color:$onyx;
+  text-align: center;
+
+  & h2 {
+    font-size: $xxx-large;
+    font-weight: $bold;
+    font-family: $raleway;
+    color: $white;
+  }
+}
+
+.main__precios-card {
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  padding: 4%;
+  margin: 10% 5%;
+  text-align: center;
+
+  & ul {
+    text-align: left;
+    padding-bottom: 20%;
+
+
+    & li {
+      padding: 5%;
+      font-family: $open-sans;
+      font-size: $large;
+    }
+
+    & button {}
+  }
+}
+.main__precios-card_container{
+  padding-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.main__precios-title {
+  border-bottom: 1px solid $raising-black;
+
+  & h2 {
+    margin: 10px;
+    color: $raising-black;
+    font-size: $xxxx-large;
+    padding-bottom: 25px;
+  }
+
+  & h3 {
+    margin: 10px;
+    font-size: $xx-large;
+    font-weight: $regular;
+    font-family: $open-sans;
+  }
+}
+.main__precios-card__button-container{
+  border-top: 1px solid $raising-black;
+  display: flex;
+  justify-content: center;
+}

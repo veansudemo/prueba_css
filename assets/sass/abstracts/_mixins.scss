@@ -1,0 +1,15 @@
+@mixin btn-small {
+  border: 0;
+  color: $white;
+  font-size: $medium;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+@mixin btn-big {
+  border: 0;
+  color: $white;
+  font-size: $large;
+  padding: 20px 80px;
+  cursor: pointer;
+}
